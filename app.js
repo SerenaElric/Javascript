@@ -116,18 +116,22 @@ console.log (nameFirst.charAt(1));
 
 const text = document.querySelector(".types");
 const li1 = document.querySelector(".list1");
-const colors = ["Yellow", "Orange", "Red", "Silver", "Gold", "Platium"]
+const li2 = document.querySelector(".list2");
+const li3 = document.querySelector(".list3");
+const li4 = document.querySelector(".list4");
+const li5 = document.querySelector(".list5");
+const li6 = document.querySelector(".list6");
+const colors = ["Yellow", "Orange", "Red", "Silver", "Gold", "Platium"];
 
-let i = 0;
-let textContent = "";
-while (colors[i]) {
-    textContent += colors[i] + "<br>";
-    i++;
-}
 
 text.style.color = "maroon"; 
 text.style.fontFamily = "Copperplate Gothic Light";
-li1.classList.add("ageColor");
+li1.classList.add("hatchColor");
+li2.classList.add("juvColor");
+li3.classList.add("adultColor");
+li4.classList.add("elderColor");
+li5.classList.add("grandColor");
+li6.classList.add("legendColor");
 
 for(color of colors) {
     console.log(color);
@@ -137,4 +141,39 @@ for(color of colors) {
     }
 }
 
+const minNum = 1;
+const maxNum = 100;
+const answer = Math.floor(Math.random() * (maxNum - minNum + 1));
+
+let attempts = 0;
+let guess;
+let running = true;
+
+while(running){
+
+    guess = window.prompt(`Guess my Age (${minNum} - ${maxNum})`);
+    guess = Number(guess);
+
+    if(isNaN(guess)){
+        window.alert(`Not a number, please try again!`);
+    }
+    else if(guess < minNum || guess > maxNum){
+        window.alert("Please enter a valid number!");
+    }
+    else{
+        attempts++;
+        if(guess < answer){
+            window.alert("TOO LOW! TRY AGAIN!");
+        }
+        else if(guess > answer){
+            window.alert("TOO HIGH! TRY AGAIN!");
+        }
+        else{
+            window,alert(`CORRECT! I am ${answer} years old!`);
+            running = false;
+        }
+    }
+
+
+}
 

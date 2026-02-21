@@ -4,7 +4,33 @@ h1 {
     font-family: 'Copperplate Gothic Light';
 }
 
-.ageColor {
+.hatchColor {
     background-color: yellow;
     font-style: italic;
+}
+.juvColor {
+    background-color: orangered;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.adultColor {
+    background-color: red;
+    font-weight: bold;
+}
+
+.elderColor {
+    background-color: silver;
+    font-style: italic;
+}
+
+.grandColor {
+    background-color: goldenrod;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.legendColor {
+    background-color: slategray;
+    font-weight: bold;
 }
