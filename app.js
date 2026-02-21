@@ -117,9 +117,24 @@ console.log (nameFirst.charAt(1));
 const text = document.querySelector(".types");
 const li1 = document.querySelector(".list1");
 const colors = ["Yellow", "Orange", "Red", "Silver", "Gold", "Platium"]
-let favColor;
+
+let i = 0;
+let textContent = "";
+while (colors[i]) {
+    textContent += colors[i] + "<br>";
+    i++;
+}
 
 text.style.color = "maroon"; 
 text.style.fontFamily = "Copperplate Gothic Light";
 li1.classList.add("ageColor");
+
+for(color of colors) {
+    console.log(color);
+    if (color === "Red"){
+        console.log("Red is my favorite color!");
+        break;
+    }
+}
+
 
