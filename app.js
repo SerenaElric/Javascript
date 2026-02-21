@@ -111,3 +111,15 @@ switch(true){
 
 console.log (dragonColor);
 console.log (nameFirst.charAt(1));
+
+// DOM and LOOPS
+
+const text = document.querySelector(".types");
+const li1 = document.querySelector(".list1");
+const colors = ["Yellow", "Orange", "Red", "Silver", "Gold", "Platium"]
+let favColor;
+
+text.style.color = "maroon"; 
+text.style.fontFamily = "Copperplate Gothic Light";
+li1.classList.add("ageColor");
+

@@ -1,0 +1,10 @@
+h1 {
+    color: maroon;
+    font-weight: bold;
+    font-family: 'Copperplate Gothic Light';
+}
+
+.ageColor {
+    background-color: yellow;
+    font-style: italic;
+}
