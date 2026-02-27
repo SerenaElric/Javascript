@@ -174,6 +174,32 @@ while(running){
         }
     }
 
-
 }
 
+    //arrays and objects
+
+
+const dragons = [{name: "Luna", color: "blue", age: 15, mate: false},
+                 {name: "Ignitus", color: "red", age: 78, mate: true},
+                 {name: "Thor", color: "yellow", age: 22, mate: false},
+                 {name: "Flora", color: "green", age: 65, mate: true}];
+
+                
+dragons.push({name: "Ceres", color: "purple", age: 52, mate: true});
+dragons.forEach(dragon => console.log(dragon.color));
+const youngDragons = dragons.filter(dragon => dragon.age <50);
+const dragonQueen = {
+    name: "Diana",
+    age: 101,
+    greeting: function(){console.log(`Hello I am Queen ${this.name}`)}
+}
+const dragonKing = {
+    name: "Alexander",
+    age: 146,
+    greeting: function(){console.log(`Hello I am King ${this.name}`)}
+}
+
+dragonQueen.greeting();
+dragonKing.greeting();
+console.log(dragons);
+console.log(youngDragons);
